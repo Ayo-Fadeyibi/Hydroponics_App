@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+/* CSS pseudoclass targetting html element, to set global variables. */
+:root {
+  --sans: 'Questrial', system-ui, sans-serif;
+  --heading: 'Questrial', system-ui, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  color: #101828;
+
+  --color-bg-green: #DCFCE7;
+  --color-bg-white: #FEFFFE; 
+
+}
+
+@theme {
+  --color-bg-white: #FEFFFE; 
+  --color-bg-green: #DCFCE7;
+  --color-bg-purple: #F6F5FF; 
+
+  --color-primary-green: #00A63E;  
+  --color-secondary-green: #00A63E;
+  --color-pill-bg-green: #DCFCE7;
+  --color-dark-green: #008236;
+
+  --color-primary-purple: #7F22FE; 
+
+  --color-grey-outline: #99A1AF; 
+  --color-grey-nonselect: #E6E7EB;
+  --color-grey-subtext: #4A5565; 
+
+  --font-sans: 'Questrial', system-ui, sans-serif;
+  --font-display: 'Roboto', system-ui, sans-serif;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
